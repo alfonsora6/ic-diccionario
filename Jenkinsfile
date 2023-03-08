@@ -24,7 +24,7 @@ pipeline {
             }
         }
     }
-    post {
+        post {
          always {
           mail to: 'debian@novalocal',
           subject: "Status of pipeline: ${currentBuild.fullDisplayName}",
